@@ -22,7 +22,11 @@
             <input type="text" name="query" class="form-control search-box" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default">Search</button>
+          
         </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">cart(0)</a></li>
+        </ul>
       </div>
     </div>
   </nav>
