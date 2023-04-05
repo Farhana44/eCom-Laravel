@@ -26,16 +26,17 @@
     </tbody>
   </table>
 
-  <form>
+  <form method="POST" action="orderplace">
+    @csrf
   <div class="form-group">
-    <label>Address</label>
-    <textarea class="form-control"></textarea>
+    
+    <textarea placeholder="Enter Your Address" class="form-control" name="address"></textarea>
   </div>
   <div class="form-group">
     <label for="">Payment Method</label>
-    <p><input type="radio" name="payment"><span>Online Payment</span> </p>
-    <p><input type="radio" name="payment"><span>EMI Payment</span> </p>
-    <p><input type="radio" name="payment"><span>Payment ON Deilvery</span> </p>
+    <p><input type="radio" value="cash" name="payment"><span>Online Payment</span> </p>
+    <p><input type="radio" value="cash" name="payment"><span>EMI Payment</span> </p>
+    <p><input type="radio" value="cash" name="payment"><span>Payment ON Deilvery</span> </p>
 
   </div>
   <button type="submit" class="btn btn-default">Order Now</button>
